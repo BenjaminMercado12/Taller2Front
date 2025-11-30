@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useEffect } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 import { getPokemons } from "../services/pokemonService";
 
 const ApiContext = createContext();
@@ -16,7 +16,8 @@ export const ApiProvider = ({ children }) => {
       setError(null);
       const data = await getPokemons();
       setPokemons(data);
-    } catch (err) {
+    } catch (e) {
+      console.error(e);
       setError("Error al cargar los datos");
     } finally {
       setLoading(false);
