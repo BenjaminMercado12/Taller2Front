@@ -1,16 +1,29 @@
-# React + Vite
+# Taller 2 - React + API Externa
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto corresponde al Taller 2, donde se desarrolla una aplicación web utilizando **React**, **PrimeReact**, **React Router** y el consumo de una **API REST externa**.  
+En este caso se utilizó **PokeAPI** para obtener información de Pokémon y mostrarla mediante componentes de PrimeReact
+Integrantes:
+Benjamín Mercado
 
-Currently, two official plugins are available:
+Tecnologías utilizadas:
+React
+PrimeReact
+PrimeIcons
+React Router DOM
+Vite
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Funcionalidades:
+Página de inicio con información del proyecto.
+Página de implementación que consume la API externa.
+Uso del patrón **Provider** para el manejo de estado global.
+Capa de servicios para realizar peticiones HTTP.
+Tabla con paginación y botón para recargar datos usando PrimeReact.
 
-## React Compiler
+API utilizada:
+PokeAPI 
+Endpoint: `https://pokeapi.co/api/v2/pokemon?limit=10`
+Cómo ejecutar el proyecto:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+npm run dev
